@@ -35,6 +35,7 @@ public class BatterieTest {
 			nomAlgoCourant = this.mesAlgos.get(i).getClass().getSimpleName();
 			// System.out.println("Test de l'algo : "+nomAlgoCourant);
 			for (int j = 0; j < this.mesGraphes.size(); j++) {
+				System.out.println(j);
 				// System.out.println("Test sur le graphe suivant : ");
 				// System.out.println(mesGraphes.get(j).getGraphe().toString());
 				currentResultat = this.mesAlgos.get(i).run(n, this.mesGraphes.get(j));
