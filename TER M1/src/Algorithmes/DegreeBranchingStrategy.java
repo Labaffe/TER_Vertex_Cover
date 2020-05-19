@@ -59,7 +59,7 @@ public class DegreeBranchingStrategy extends AlgoExacte {
 			boolean appel1 = algo(n-2, gtemp);
 			
 			//on récupère les voisins des voisins et on les compte
-			//on rappelle l'algo avec le graphe privé des voisins des voisins et pour k-(nombre de voisins + nombre de voisins de voisins)
+			//on rappelle l'algo avec le graphe privé des voisins des voisins et pour k-(nombre de voisins de voisins)
 			Graphe gtemp2 = new Graphe();
 			gtemp2.setGraphe(Operations.copyGraph((Graph<Integer,String>)g.getGraphe(), this.factory));
 			Set<Integer> voisinsDesVoisins = Operations.getNeighbors(g.getGraphe(), verticeDeux, 2);
